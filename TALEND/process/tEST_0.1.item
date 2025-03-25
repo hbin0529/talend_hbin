@@ -469,7 +469,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
-        <mapperTableEntries name="EMPNO" expression="row2.EMPNO" type="id_Integer"/>
+        <mapperTableEntries name="EMPNO" expression="row2.EMPNO.intValue() " type="id_Integer"/>
         <mapperTableEntries name="ENAME" expression="row2.ENAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="JOB" expression="row2.JOB " type="id_String" nullable="true"/>
         <mapperTableEntries name="MGR" expression="row2.MGR.intValue() " type="id_Integer" nullable="true"/>
