@@ -240,9 +240,7 @@
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="EMP_DURATION" expression="(int)TalendDate.diffDate(TalendDate.getCurrentDate(), row1.HIREDATE) / 365" type="id_String"/>
-      </varTables>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="output1">
         <mapperTableEntries name="EMPNO" expression="row1.EMPNO " type="id_BigDecimal"/>
         <mapperTableEntries name="ENAME" expression="row1.ENAME " type="id_String" nullable="true"/>
@@ -252,7 +250,7 @@
         <mapperTableEntries name="SAL" expression="row1.SAL " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="COMM" expression="row1.COMM " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="DEPTNO" expression="row1.DEPTNO " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="EMP_DURATION" expression="Var.EMP_DURATION " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="EMP_DURATION" expression="(int)TalendDate.diffDate(TalendDate.getCurrentDate(), row1.HIREDATE) / 365 " type="id_Integer" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="EMPNO" type="id_BigDecimal"/>
