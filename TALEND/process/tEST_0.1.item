@@ -470,11 +470,11 @@
         <mapperTableEntries name="EMPNO" expression="row2.EMPNO" type="id_Integer"/>
         <mapperTableEntries name="ENAME" expression="row2.ENAME " type="id_String" nullable="true"/>
         <mapperTableEntries name="JOB" expression="row2.JOB " type="id_String" nullable="true"/>
-        <mapperTableEntries name="MGR" expression="row2.MGR.intValue() " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="MGR" expression="row2.MGR" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="HIREDATE" expression="row2.HIREDATE " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="SAL" expression="row2.SAL.floatValue() " type="id_Float" nullable="true"/>
-        <mapperTableEntries name="COMM" expression="row2.COMM.floatValue() " type="id_Float" nullable="true"/>
-        <mapperTableEntries name="DEPTNO" expression="row2.DEPTNO.intValue() " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="SAL" expression="row2.SAL" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="COMM" expression="row2.COMM" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="DEPTNO" expression="row2.DEPTNO" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="EMP_DURATION" expression="(int)TalendDate.diffDate(TalendDate.getCurrentDate(), row2.HIREDATE) / 365 " type="id_Integer" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
