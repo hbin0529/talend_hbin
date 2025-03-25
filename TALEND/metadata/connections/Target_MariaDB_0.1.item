@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_TFpyQAmNEfC0Bu_TFCMOXQ" name="Target_MariaDB" id="_OHf2MAmNEfC0Bu_TFCMOXQ" label="Target_MariaDB" dataPackage="_TGCz0AmNEfC0Bu_TFCMOXQ" DatabaseType="MySQL" DriverClass="org.mariadb.jdbc.Driver" URL="jdbc:mariadb://192.168.1.11:3306/targetDB?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" dbVersionString="MARIADB" Port="3306" Username="root" Password="enc:system.encryption.key.v1:IIx8ik33uISYOnhxd49aLb6L/jRpZ7GDb5FUmUBXW3s=" ServerName="192.168.1.11" DatasourceName="" FileFieldName="" SID="targetDB" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_TFqZUAmNEfC0Bu_TFCMOXQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_TF64AAmNEfC0Bu_TFCMOXQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_TF7fEAmNEfC0Bu_TFCMOXQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_TF7fEQmNEfC0Bu_TFCMOXQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_TF7fEgmNEfC0Bu_TFCMOXQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_TF7fEwmNEfC0Bu_TFCMOXQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_TF7fFAmNEfC0Bu_TFCMOXQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_TF7fFQmNEfC0Bu_TFCMOXQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_TF-iYAmNEfC0Bu_TFCMOXQ" tag="DB ProductName" value="MariaDB"/>
+    <taggedValue xmi:id="_TF-iYQmNEfC0Bu_TFCMOXQ" tag="DB ProductVersion" value="10.4.19-MariaDB"/>
+    <taggedValue xmi:id="_TF-iYgmNEfC0Bu_TFCMOXQ" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_TFqZUQmNEfC0Bu_TFCMOXQ" key="CONN_PARA_KEY_USERNAME" value="root"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_TGCz0AmNEfC0Bu_TFCMOXQ" name="targetDB" dataManager="_TFpyQAmNEfC0Bu_TFCMOXQ"/>
+</xmi:XMI>
