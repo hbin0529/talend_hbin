@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_KRCmMAmGEfC0Bu_TFCMOXQ" name="MariaDB" id="_F_nNQAmGEfC0Bu_TFCMOXQ" label="MariaDB" dataPackage="_KRi8gAmGEfC0Bu_TFCMOXQ _KRi8gQmGEfC0Bu_TFCMOXQ _KRi8ggmGEfC0Bu_TFCMOXQ _KRi8gwmGEfC0Bu_TFCMOXQ _KRi8hAmGEfC0Bu_TFCMOXQ _KRi8hQmGEfC0Bu_TFCMOXQ _KRi8hgmGEfC0Bu_TFCMOXQ _KRi8hwmGEfC0Bu_TFCMOXQ _KRi8iAmGEfC0Bu_TFCMOXQ _KRi8iQmGEfC0Bu_TFCMOXQ _KRi8igmGEfC0Bu_TFCMOXQ _KRi8iwmGEfC0Bu_TFCMOXQ _KRi8jAmGEfC0Bu_TFCMOXQ _KRi8jQmGEfC0Bu_TFCMOXQ _KRi8jgmGEfC0Bu_TFCMOXQ _KRi8jwmGEfC0Bu_TFCMOXQ _KRi8kAmGEfC0Bu_TFCMOXQ _KRi8kQmGEfC0Bu_TFCMOXQ _KRi8kgmGEfC0Bu_TFCMOXQ _KRi8kwmGEfC0Bu_TFCMOXQ _KRi8lAmGEfC0Bu_TFCMOXQ _KRi8lQmGEfC0Bu_TFCMOXQ _KRi8lgmGEfC0Bu_TFCMOXQ _KRi8lwmGEfC0Bu_TFCMOXQ _KRi8mAmGEfC0Bu_TFCMOXQ _KRi8mQmGEfC0Bu_TFCMOXQ _KRi8mgmGEfC0Bu_TFCMOXQ _KRi8mwmGEfC0Bu_TFCMOXQ _KRi8nAmGEfC0Bu_TFCMOXQ _KRi8nQmGEfC0Bu_TFCMOXQ _KRi8ngmGEfC0Bu_TFCMOXQ _KRi8nwmGEfC0Bu_TFCMOXQ _KRi8oAmGEfC0Bu_TFCMOXQ _KRi8oQmGEfC0Bu_TFCMOXQ _KRi8ogmGEfC0Bu_TFCMOXQ _KRi8owmGEfC0Bu_TFCMOXQ _KRi8pAmGEfC0Bu_TFCMOXQ _KRi8pQmGEfC0Bu_TFCMOXQ _KRi8pgmGEfC0Bu_TFCMOXQ _KRi8pwmGEfC0Bu_TFCMOXQ _KRi8qAmGEfC0Bu_TFCMOXQ _KRi8qQmGEfC0Bu_TFCMOXQ _KRi8qgmGEfC0Bu_TFCMOXQ _KRi8qwmGEfC0Bu_TFCMOXQ _KRi8rAmGEfC0Bu_TFCMOXQ _KRi8rQmGEfC0Bu_TFCMOXQ _KRi8rgmGEfC0Bu_TFCMOXQ _KRi8rwmGEfC0Bu_TFCMOXQ _KRi8sAmGEfC0Bu_TFCMOXQ" DatabaseType="MySQL" DriverClass="org.mariadb.jdbc.Driver" URL="jdbc:mariadb://192.168.1.11:3306/?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" dbVersionString="MARIADB" Port="3306" Username="root" Password="enc:system.encryption.key.v1:g3LlUdAVY71K4p61cFJPUOuqYvsN/v8L2MgB4u5tkbk=" ServerName="192.168.1.11" DatasourceName="" FileFieldName="" SID="" SqlSynthax="" StringQuote="" NullChar="" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" StandardSQL="true" SQLMode="false" UiSchema="" supportNLS="false">
+    <taggedValue xmi:id="_KRCmMQmGEfC0Bu_TFCMOXQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_KRR2wAmGEfC0Bu_TFCMOXQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_KRR2wQmGEfC0Bu_TFCMOXQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_KRR2wgmGEfC0Bu_TFCMOXQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_KRR2wwmGEfC0Bu_TFCMOXQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_KRR2xAmGEfC0Bu_TFCMOXQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_KRR2xQmGEfC0Bu_TFCMOXQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_KRR2xgmGEfC0Bu_TFCMOXQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_KRU6EAmGEfC0Bu_TFCMOXQ" tag="DB ProductName" value="MariaDB"/>
+    <taggedValue xmi:id="_KRU6EQmGEfC0Bu_TFCMOXQ" tag="DB ProductVersion" value="10.4.19-MariaDB"/>
+    <taggedValue xmi:id="_KRU6EgmGEfC0Bu_TFCMOXQ" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_KRCmMgmGEfC0Bu_TFCMOXQ" key="CONN_PARA_KEY_USERNAME" value="root"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8gAmGEfC0Bu_TFCMOXQ" name="20240222" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8gQmGEfC0Bu_TFCMOXQ" name="CANE" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8ggmGEfC0Bu_TFCMOXQ" name="CANE_asan" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8gwmGEfC0Bu_TFCMOXQ" name="CANE_board" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8hAmGEfC0Bu_TFCMOXQ" name="CANE_ilsan" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8hQmGEfC0Bu_TFCMOXQ" name="CAPs" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8hgmGEfC0Bu_TFCMOXQ" name="CAPs_hyu" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8hwmGEfC0Bu_TFCMOXQ" name="CAPs_kumc" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8iAmGEfC0Bu_TFCMOXQ" name="CAPs_SMC" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8iQmGEfC0Bu_TFCMOXQ" name="CAPs_Survey" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8igmGEfC0Bu_TFCMOXQ" name="CAPs_Survey_1" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8iwmGEfC0Bu_TFCMOXQ" name="CAPs_Survey_10" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8jAmGEfC0Bu_TFCMOXQ" name="CAPs_Survey_11" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8jQmGEfC0Bu_TFCMOXQ" name="CAPs_Survey_12" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8jgmGEfC0Bu_TFCMOXQ" name="CAPs_Survey_13" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8jwmGEfC0Bu_TFCMOXQ" name="CAPs_Survey_2" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8kAmGEfC0Bu_TFCMOXQ" name="CAPs_Survey_3" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8kQmGEfC0Bu_TFCMOXQ" name="CAPs_Survey_4" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8kgmGEfC0Bu_TFCMOXQ" name="CAPs_Survey_5" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8kwmGEfC0Bu_TFCMOXQ" name="CAPs_Survey_6" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8lAmGEfC0Bu_TFCMOXQ" name="CAPs_Survey_7" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8lQmGEfC0Bu_TFCMOXQ" name="CAPs_Survey_8" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8lgmGEfC0Bu_TFCMOXQ" name="CAPs_Survey_9" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8lwmGEfC0Bu_TFCMOXQ" name="CAPs_Survey_A" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8mAmGEfC0Bu_TFCMOXQ" name="CRUD" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8mQmGEfC0Bu_TFCMOXQ" name="DB_kjh" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8mgmGEfC0Bu_TFCMOXQ" name="ELF_test" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8mwmGEfC0Bu_TFCMOXQ" name="ETRi_DB01" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8nAmGEfC0Bu_TFCMOXQ" name="Feedback_result" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8nQmGEfC0Bu_TFCMOXQ" name="FHIR" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8ngmGEfC0Bu_TFCMOXQ" name="HMM" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8nwmGEfC0Bu_TFCMOXQ" name="information_schema" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8oAmGEfC0Bu_TFCMOXQ" name="KIMES2022" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8oQmGEfC0Bu_TFCMOXQ" name="LOINC" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8ogmGEfC0Bu_TFCMOXQ" name="mysql" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8owmGEfC0Bu_TFCMOXQ" name="nhimc" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8pAmGEfC0Bu_TFCMOXQ" name="omop_cdm_5_3" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8pQmGEfC0Bu_TFCMOXQ" name="omop_cdm_6_0" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8pgmGEfC0Bu_TFCMOXQ" name="omop_cdm_voca" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8pwmGEfC0Bu_TFCMOXQ" name="performance_schema" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8qAmGEfC0Bu_TFCMOXQ" name="phpmyadmin" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8qQmGEfC0Bu_TFCMOXQ" name="Samsung" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8qgmGEfC0Bu_TFCMOXQ" name="samsung" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8qwmGEfC0Bu_TFCMOXQ" name="sph_concept" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8rAmGEfC0Bu_TFCMOXQ" name="SpringBoot_Test" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8rQmGEfC0Bu_TFCMOXQ" name="Synthea" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8rgmGEfC0Bu_TFCMOXQ" name="targetDB" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8rwmGEfC0Bu_TFCMOXQ" name="Test" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_KRi8sAmGEfC0Bu_TFCMOXQ" name="Vonk" dataManager="_KRCmMAmGEfC0Bu_TFCMOXQ"/>
+</xmi:XMI>
