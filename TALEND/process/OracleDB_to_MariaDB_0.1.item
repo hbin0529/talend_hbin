@@ -99,18 +99,8 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="200">
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tOracleInput" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/Oracle" show="false"/>
-    <elementParameter field="CHECK" name="START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tOracleInput" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_D5OEUAmNEfC0Bu_TFCMOXQ" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -197,7 +187,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="360" posY="200">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="280" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -241,7 +231,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="output1">
         <mapperTableEntries name="EMPNO" expression="row1.EMPNO != null ? row1.EMPNO.intValue() : null " type="id_Integer"/>
@@ -266,17 +256,8 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="600" posY="200">
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tMysqlOutput" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/MySQL" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tMysqlOutput" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_OHf2MAmNEfC0Bu_TFCMOXQ" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MARIADB"/>
@@ -422,6 +403,341 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tJBossESBInput" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="440" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJBossESBInput_1" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGEKEY" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJMSInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJMSInput_1" show="false"/>
+    <elementParameter field="MODULE_LIST" name="DRIVER_JAR" value=""/>
+    <elementParameter field="TEXT" name="CONTEXT_PROVIDER" value="&quot;org.apache.activemq.jndi.ActiveMQInitialContextFactory&quot;"/>
+    <elementParameter field="TEXT" name="SERVER_URL" value="&quot;tcp://localhost:61616&quot;"/>
+    <elementParameter field="TEXT" name="CONN_FACTORY_NAME" value="&quot;ConnectionFactory&quot;"/>
+    <elementParameter field="CHECK" name="USER_IDENTITY" value="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jYtjjlh4Mn8IENu8wZJIckCn47MXFUpux2r/JqOl" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_SUB" value="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SUBSCRIBER_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_JNDI_LOOKUP" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="MSGTYPE" value="Topic"/>
+    <elementParameter field="TEXT" name="FROM" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="-1"/>
+    <elementParameter field="TEXT" name="MAX_MSG" value="-1"/>
+    <elementParameter field="TEXT" name="MSG_SELECTOR" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESSING_MODE" value="RAW"/>
+    <elementParameter field="TABLE" name="ADVANCED_PROPERTIES"/>
+    <elementParameter field="CHECK" name="USE_JAVAX_JMS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJMSInput_1">
+      <column defaultValue="" key="false" length="0" name="message" nullable="true" precision="0" sourceType="" type="id_Object" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tKafkaOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="200" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tKafkaOutput_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="INPUT_TYPE" value="BYTES"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="KAFKA_VERSION" value="KAFKA_3_2_3"/>
+    <elementParameter field="TEXT" name="BROKER_LIST" value="&quot;host1:port1,host2:port2,...&quot;"/>
+    <elementParameter field="TEXT" name="KAFKA_TOPIC" value="&quot;mytopic&quot;"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="COMPRESSION" value="GZIP" show="false"/>
+    <elementParameter field="CHECK" name="USE_HTTPS" value="false"/>
+    <elementParameter field="CHECK" name="SET_KEYSTORE" value="false" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="HTTPS_SETTING" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter field="FILE" name="JAAS_CONF" value="&quot;/etc/kafka/kafka_client_jaas.conf&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_SERVICE_NAME" value="&quot;kafka&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_KINIT_PATH" value="false" show="false"/>
+    <elementParameter field="FILE" name="KINIT_PATH" value="&quot;/usr/bin/kinit&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_KRB5_CONF" value="false" show="false"/>
+    <elementParameter field="FILE" name="KRB5_CONF" value="&quot;/etc/kafka/krb5.conf&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TABLE" name="KAFKA_PRODUCER_PROPERTIES"/>
+    <elementParameter field="CHECK" name="APPLY_SECURITY_PROPERTIES_AFTER_ADVANCED" value="false" show="false"/>
+    <elementParameter field="CHECK" name="HEADERS" value="false"/>
+    <elementParameter field="TABLE" name="KAFKA_HEADERS_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="USE_SCHEMA_REGISTRY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_REGISTRY_URL" value="" show="false"/>
+    <elementParameter field="CHECK" name="SCHEMA_REGISTRY_BASIC_AUTH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_REGISTRY_USERNAME" value="" show="false"/>
+    <elementParameter field="PASSWORD" name="SCHEMA_REGISTRY_PASSWORD" value="" show="false"/>
+    <elementParameter field="CHECK" name="SCHEMA_REGISTRY_SET_KEYSTORE" value="false" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="SCHEMA_REGISTRY_KEYSTORE_SETTINGS" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SCHEMA_REGISTRY_KEY_SERIALIZER" value="AVRO" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_REGISTRY_CUSTOM_KEY_SERIALIZER" value="&quot;org.apache.kafka.common.serialization.ByteArraySerializer&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SCHEMA_REGISTRY_VALUE_SERIALIZER" value="AVRO" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_REGISTRY_CUSTOM_VALUE_SERIALIZER" value="&quot;org.apache.kafka.common.serialization.ByteArraySerializer&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tKafkaOutput_2">
+      <column defaultValue="" key="false" length="0" name="serializedValue" nullable="true" precision="0" sourceType="" type="id_byte[]" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="560" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="21"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="990" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGON_TYPE" value="PASSWORD"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;anonymous&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:GLNhNU/pgRwnfo9mfOSZQZ9gtGbM1tbjGVevrv2z"/>
+    <elementParameter field="TEXT" name="ACCOUNT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SFTP" value="false"/>
+    <elementParameter field="CHECK" name="FTPS" value="false"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:Dmpbvu7OCsFffsbW+zJ9U+LN4Px/iOmPxA74HKajM3c0cR3i" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD" show="false"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:wWWsE/j7PPbM0ZyO1DlBgBJOeH/7tqK+JcyaaTzAWZrCpeC0" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT" show="false"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;1080&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:YZVtz3wZDoZbuFpPW9BtGfska/d+w6Puol2RNcJR" show="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0" show="false"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="0"/>
+    <elementParameter field="CHECK" name="USE_STRICT_REPLY_PARSING" value="true"/>
+    <elementParameter field="CHECK" name="CONFIG_CLIENT" value="false" show="false"/>
+    <elementParameter field="TABLE" name="CLIENT_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFTPGet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPGet_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="21"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="990" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGON_TYPE" value="PASSWORD"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;anonymous&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:swVFKw3TsuC3pX+WzKF9R18QThSnANow6nHHFcFRDIzrfZH7SpGB"/>
+    <elementParameter field="TEXT" name="ACCOUNT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SFTP" value="false"/>
+    <elementParameter field="CHECK" name="FTPS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD" show="false"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:yhTF/Yud0CRdwhL1nRAWt1SqnOxoCISIYKEnW2e4B3s5Sdby" show="false"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:h8r9DT4CCWeZnC8btZ80WdbpHyyox98GqtoHwIlXEq8AKbBc" show="false"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;.&quot;"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="MODE" value="ascii"/>
+    <elementParameter field="CLOSED_LIST" name="OVERWRITE" value="never"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="SFTPOVERWRITE" value="overwrite" show="false"/>
+    <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
+    <elementParameter field="TABLE" name="FILES"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT" show="false"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;1080&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:SY+KoB9/C+Md+EEYQ9hgkybQPf+oVzE3IaYfd7JD" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_MESSAGE" value="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0" show="false"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="0"/>
+    <elementParameter field="CHECK" name="USE_STRICT_REPLY_PARSING" value="true"/>
+    <elementParameter field="CHECK" name="CONFIG_CLIENT" value="false" show="false"/>
+    <elementParameter field="TABLE" name="CLIENT_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFTPGet_1"/>
+  </node>
+  <node componentName="tFTPPut" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPPut_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="21"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="990" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGON_TYPE" value="PASSWORD"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;anonymous&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:hG7XUqOIzvvghcyXqSeKFzfJxYpkg5z1846w/R/D3s7VIOw5bCz7"/>
+    <elementParameter field="TEXT" name="ACCOUNT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SFTP" value="false"/>
+    <elementParameter field="CHECK" name="FTPS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD" show="false"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:DA474gAqkkG/oL4MN6c16PgmlxuobfE/tYClpLaqb/uXNhVk" show="false"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;.&quot;"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CREATE_DIR_IF_NOT_EXIST" value="false"/>
+    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" value="true" show="false"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:/6kwRh/gwz1pWp0/ov6cFP2QjOVvAXtJni7JgL8nVnmv4RNG" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="MODE" value="ascii"/>
+    <elementParameter field="CLOSED_LIST" name="OVERWRITE" value="never"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="SFTPOVERWRITE" value="overwrite" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FTPSOVERWRITE" value="always" show="false"/>
+    <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
+    <elementParameter field="TABLE" name="FILES"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT" show="false"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;1080&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:SQNWGNxCEsl8/2fDW3aCDCGifaf8HWA3dn5Fw0yp" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" value="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0" show="false"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="0"/>
+    <elementParameter field="CHECK" name="USE_STRICT_REPLY_PARSING" value="true"/>
+    <elementParameter field="CHECK" name="RENAME_AFTER" value="false"/>
+    <elementParameter field="CHECK" name="CONFIG_CLIENT" value="false" show="false"/>
+    <elementParameter field="TABLE" name="CLIENT_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFTPPut_1"/>
+  </node>
+  <node componentName="tKafkaInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tKafkaInput_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT_TYPE" value="STRING"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="KAFKA_VERSION" value="KAFKA_3_2_3"/>
+    <elementParameter field="TEXT" name="BROKER_LIST" value="&quot;host1:port1,host2:port2,...&quot;"/>
+    <elementParameter field="TEXT" name="KAFKA_TOPIC" value="&quot;mytopic&quot;"/>
+    <elementParameter field="TEXT" name="GROUP_ID" value="&quot;mygroup&quot;"/>
+    <elementParameter field="CHECK" name="RESET_OFFSET" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTO_OFFSET_RESET_NEW" value="LATEST"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT_OFFSET" value="true"/>
+    <elementParameter field="TEXT" name="KAFKA_COMMIT_INTERVAL" value="5000"/>
+    <elementParameter field="CHECK" name="USE_BATCH_MAX_DURATION" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_MAX_DURATION" value="600000" show="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_MAX_SIZE" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_MAX_SIZE" value="5000" show="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_MESSAGE_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_MESSAGE_TIMEOUT" value="10000" show="false"/>
+    <elementParameter field="CHECK" name="USE_HTTPS" value="false"/>
+    <elementParameter field="CHECK" name="SET_KEYSTORE" value="false" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="HTTPS_SETTING" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter field="FILE" name="JAAS_CONF" value="&quot;/etc/kafka/kafka_client_jaas.conf&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_SERVICE_NAME" value="&quot;kafka&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_KINIT_PATH" value="false" show="false"/>
+    <elementParameter field="FILE" name="KINIT_PATH" value="&quot;/usr/bin/kinit&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_KRB5_CONF" value="false" show="false"/>
+    <elementParameter field="FILE" name="KRB5_CONF" value="&quot;/etc/kafka/krb5.conf&quot;" show="false"/>
+    <elementParameter field="TABLE" name="KAFKA_CONSUMER_PROPERTIES"/>
+    <elementParameter field="CHECK" name="APPLY_SECURITY_PROPERTIES_AFTER_ADVANCED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="KAFKA_CONSUMER_TIMEOUT" value="-1"/>
+    <elementParameter field="CHECK" name="SAVE_OFFSET" value="false"/>
+    <elementParameter field="CHECK" name="CUSTOM_ENCODING" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter field="CHECK" name="USE_SCHEMA_REGISTRY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_REGISTRY_URL" value="" show="false"/>
+    <elementParameter field="CHECK" name="SCHEMA_REGISTRY_BASIC_AUTH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_REGISTRY_USERNAME" value="" show="false"/>
+    <elementParameter field="PASSWORD" name="SCHEMA_REGISTRY_PASSWORD" value="" show="false"/>
+    <elementParameter field="CHECK" name="SCHEMA_REGISTRY_SET_KEYSTORE" value="false" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="SCHEMA_REGISTRY_KEYSTORE_SETTINGS" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SCHEMA_REGISTRY_KEY_DESERIALIZER" value="AVRO" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_REGISTRY_CUSTOM_KEY_DESERIALIZER" value="&quot;org.apache.kafka.common.serialization.ByteArrayDeserializer&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SCHEMA_REGISTRY_VALUE_DESERIALIZER" value="AVRO" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_REGISTRY_CUSTOM_VALUE_DESERIALIZER" value="&quot;org.apache.kafka.common.serialization.ByteArrayDeserializer&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tKafkaInput_1">
+      <column defaultValue="" key="false" length="0" name="payload" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSOAP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="80" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSOAP_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_NTLM" value="false"/>
+    <elementParameter field="TEXT" name="NTLM_DOMAIN" value="&quot;192.168.0.100&quot;" show="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:Ju66Gy1OJQUUiLtxwGo8Y5pT4zbHBhTjDVpNeYCPnbZz8vrhYD0=" show="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="8080" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:6mk3pUGuSzkY+yFSnHBr5Ev60PdwX2HiJvAVee8w" show="false"/>
+    <elementParameter field="CHECK" name="NEED_SSL_TO_TRUSTSERVER" value="false"/>
+    <elementParameter field="TEXT" name="SSL_TRUSTSERVER_TRUSTSTORE" value="&quot;C:/clientTrustStore.trustStore&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="enc:system.encryption.key.v1:L7hbSz3jWwKTsWoYJzRnQezqpDk0oqgsZN4gtg5HwFZIxRyRy78=" show="false"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="ACTION" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="SOAP_VERSION" value="Soap11"/>
+    <elementParameter field="CHECK" name="USE_MESSAGE_FROM_SCHEMA" value="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="SOAPMESSAGE_FROM_SCHEMA" value="" show="false"/>
+    <elementParameter field="MEMO" name="SOAPMESSAGE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OUTPUT_DOCUMENT" value="false"/>
+    <elementParameter field="CHECK" name="USE_KERBEROS" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="KERBEROS_CONFIGURATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="ENFORCE_NTLM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSOAP_1">
+      <column defaultValue="" key="false" length="0" name="Header" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="Body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="Fault" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tREST_1" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="METHOD" value="GET"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="MEMO" name="BODY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tREST_1">
+      <column defaultValue="" key="false" length="0" name="Body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="ERROR_CODE" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSalesforceEinsteinBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="280">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceEinsteinBulkExec_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:Nr0mVI1dYsyFDGknZBIFLZCOX79XQs1Z7T4mcUYl"/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="&quot;https://login.salesforce.com/services/Soap/u/57.0&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DATASET_OPERATION" value="APPEND"/>
+    <elementParameter field="TEXT" name="DATASET" value="&quot;&quot;"/>
+    <elementParameter field="FILE" name="LOAD_DATA_PATH" value="&quot;C:/Users/hbin0/workspace/in.csv&quot;"/>
+    <elementParameter field="TEXT" name="CHARSET" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TEXT" name="FIELDS_DELIMITED_BY" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDS_ENCLOSED_BY" value="&quot;\&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LINES_TERMINATED_BY" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="NUMERIC_FORMAT" value="&quot;#.##&quot;" show="false"/>
+    <elementParameter field="CHECK" name="UPLODE_JSON_METADATA" value="true" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_GENERATE_JSON_METADATA_DESCRIPTION" value="true"/>
+    <elementParameter field="TEXT" name="NUMBER_OF_LINES_TO_IGNORE" value="0" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_API_NAME" value="&quot;SalesData&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATA_LABEL" value="&quot;Sales Data&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FULLY_QUALIFIED_NAME" value="&quot;CRM&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_JSON_METADATA" value="false" show="false"/>
+    <elementParameter field="FILE" name="JSON_METADATA_PATH" value="&quot;C:/Users/hbin0/workspace/in.json&quot;" show="false"/>
+    <elementParameter field="CHECK" name="GENERATE_JSON_IN_FILE" value="false"/>
+    <elementParameter field="DIRECTORY" name="CUSTOM_FOLDER" value="&quot;C:/Users/hbin0/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RETRIEVE_UPLOAD_STATUS" value="false"/>
+    <elementParameter field="TEXT" name="SECONDS_TO_WAIT_FOR_SERVER_ANSWER" value="60" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSalesforceEinsteinBulkExec_1"/>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
@@ -432,6 +748,56 @@
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJBossESBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJMSInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tKafkaOutput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPGet_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPPut_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tKafkaInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSOAP_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tREST_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSalesforceEinsteinBulkExec_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
